@@ -1,0 +1,368 @@
+*{
+     box-sizing: border-box; /*Para que no crezca mas de lo que yo le di de valor */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+margin: 0;
+font-family: 'Times New Roman', Times, serif;
+
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+p{
+    font-size: 18px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 40px;
+    margin:20px 0 px;
+    font-weight: bold;
+
+}
+
+button{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 255, 0.648);
+    border: 2px rgba(0,0,0,0.5) ;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5) ;
+    color: beige;
+    }
+
+button:hover{
+    background-color: fuchsia;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    
+}
+
+header .logo{
+    margin: 0px;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 40px;
+    color: fuchsia;
+   
+    
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    
+   
+
+}
+
+header a:hover{
+    color: fuchsia;
+}
+
+#heroe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: url(media/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#somosada .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#somosada span{
+    color: fuchsia;
+}
+
+#cursos{
+
+    background-color: rgba(0, 0, 0, 0.73);
+    color: whitesmoke;
+    text-align: center;
+
+
+}
+
+#cursos .container{
+
+    padding: 150px 10px;
+   
+}
+
+#cursos h2{
+    margin-top: 0px;
+    font-size: 40px;
+}
+
+#cursos p{
+display: none;
+}
+
+
+.tarjeta:first-child{
+    background-image: url(media/front-end.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+.tarjeta:nth-child(2){
+    background-image: url(media/full-stack.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+.tarjeta:last-child{
+    background-image: url(media/new.jpeg);
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 100px 12px;
+   
+}
+
+#aplica{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 0, 255, 0.589);
+    color: whitesmoke;
+    height: 60vh;
+}
+
+#aplica h2{
+    font-size: 60px;
+}
+
+footer{
+    background-color: rgba(128, 128, 128, 0.252);
+}
+
+footer p{
+    margin: 0px;
+    color: grey;
+    padding: 10px;
+}
+footer .container{
+    height: 300px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0px;
+        
+        
+    }
+
+    #somosada .container{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+
+    }
+
+    #somosada .img-container{
+        background-image: url(media/programadoras.png);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #somosada .text-container{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #cursos .tarjetero{
+        display: flex;
+        justify-content: center;
+        
+
+    }
+
+    #cursos p{
+        display: flex ;
+        margin-bottom: 50px;
+        margin-top: 0px;
+    }
+
+    #cursos h3{
+        
+        margin-top: 0;
+        font-size: 40px;
+        position: relative;
+        bottom: 50px;
+        background-color: rgba(0, 0, 0, 0.129) ;
+        
+
+    }
+
+    #cursos .tarjeta{
+        padding: 100px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0% ;
+        background-color: rgba(0, 0, 0, 0.546);
+               
+    }
+
+    .tarjeta:first-child{
+        background-image: url(media/front-end-cropped.jpg);
+        padding: 10px;
+        margin: 20px;
+        border-radius: 15px;
+    
+    }
+    
+    .tarjeta:nth-child(2){
+        background-image: url(media/full-stack-cropped.jpg);
+        padding: 50px;
+        margin: 20px;
+        border-radius: 15px;
+    
+    }
+    
+    .tarjeta:last-child{
+        background-image: url(media/python-cropped.jpg);
+        padding: 50px;
+        margin: 20px;
+        border-radius: 15px;
+    
+    }
+
+    .cursos button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+      
+       
+    }
+    #caracteristicas .img-container2{
+        background-image: url(media/ellas.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 400px;
+        position: relative;
+        left: 900px;
+        top: 250px;
+       
+       
+    }
+
+    
+    
+    #caracteristicas ul{
+        margin-left: 100px;
+        margin-bottom: 100px;
+        
+       
+       
+    }
+
+    #caracteristicas .lista{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
